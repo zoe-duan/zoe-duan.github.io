@@ -10,11 +10,11 @@ redirect_from:
 
 <span class='anchor' id='about-me'></span>
 
-Hi, I'm Zejia Duan (段泽佳). I am an incoming student in the **Master of Arts Program in the Social Sciences (MAPSS)** at the **University of Chicago**, concentrating in **Political Economy**, starting Autumn 2026.
+Hi, I'm Zejia Duan. I am an incoming student in the **Master of Arts Program in the Social Sciences (MAPSS)** at the **University of Chicago**, concentrating in **Political Economy**, starting Autumn 2026.
 
 I am currently completing my Bachelor's degree in **Philosophy** (with a minor in **Economics**) at **Renmin University of China**. My research interests lie in **Applied Microeconomics**, **Public Economics**, **Economic History**, and **Econometrics**. I am particularly interested in how institutions, fiscal policy, and historical legacies shape economic outcomes.
 
-[CV / Resume](files/Zejia.pdf)
+[CV](files/Zejia.pdf)
 
 
 # 🔬 Research Experience
@@ -43,12 +43,6 @@ I am currently completing my Bachelor's degree in **Philosophy** (with a minor i
 
 - **Baidu Inc.** — *Data Analyst Intern* | Jul. 2025 – Sep. 2025  
   Compared DeepSeek and GPT architectures; authored full-pipeline model documentation and proposed a weighted-sampling and data-augmentation framework to address data imbalance.
-
-
-# 🎖 Honors and Awards
-
-- *2025* Second Prize, 4th "Jingcai Dachuang" Beijing College Students Innovation and Entrepreneurship Competition
-- *2024* Third Prize, 26th "Innovation Cup" Extracurricular Academic and Technological Works Competition, Renmin University of China
 
 
 # 📖 Education
