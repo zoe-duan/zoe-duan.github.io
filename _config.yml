@@ -7,7 +7,7 @@
 
 # Site Settings
 title                    : "Zejia Duan"
-description              : ""
+description              : "Zejia Duan is an M.A. student in Quantitative Methods and Social Analysis (QMSA) at the University of Chicago. Her research interests include Public & Labor Economics, Corporate & Household Finance, and Applied Microeconomics."
 repository               : "zoe-duan/zoe-duan.github.io"
 google_scholar_stats_use_cdn : true
 
@@ -22,13 +22,13 @@ baidu_site_verification  :  # get baidu_site_verification from https://ziyuan.ba
 # Site Author
 author:
   name             : "Zejia Duan"
-  avatar           : "images/profile.jpg"
-  bio              : ""
-  location         : "Beijing, China"
-  employer         :
+  avatar           : "images/profile-portrait.jpg"
+  bio              : "M.A. Student in Social Sciences (QMSA)<br>University of Chicago"
+  location         : "Chicago, IL"
+  employer         : "University of Chicago"
   pubmed           : 
   googlescholar    :
-  email            : "zoeduan0830@163.com"
+  email            : "zoeduan@uchicago.edu"
   researchgate     :  # e.g., "https://www.researchgate.net/profile/yourprofile"
   uri              :
   bitbucket        :
@@ -37,7 +37,7 @@ author:
   flickr           :
   facebook         :
   foursquare       :
-  github           : # e.g., "github username"
+  github           : "zoe-duan"
   google_plus      :
   keybase          :
   instagram        :

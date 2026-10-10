@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ site.title }}</title>
+    <meta name="description" content="{{ site.description | escape }}">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="{{ site.title }}">
+    <meta property="og:url" content="{{ page.url | absolute_url }}">
+    <meta property="og:title" content="{{ site.title }}">
+    <meta property="og:description" content="{{ site.description | escape }}">
+    <meta property="og:image" content="{{ '/images/og-card.png' | absolute_url }}">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Zejia Duan, Master's student in Quantitative Methods and Social Analysis at the University of Chicago">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#0a0a0a" media="(prefers-color-scheme: dark)">
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ '/images/apple-touch-icon.png' | relative_url }}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ '/images/favicon-32x32.png' | relative_url }}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ '/images/favicon-16x16.png' | relative_url }}">
+    <link rel="manifest" href="{{ '/images/site.webmanifest' | relative_url }}">
+    <link rel="preload" href="{{ '/assets/fonts/inter-latin.woff2' | relative_url }}" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="{{ '/assets/css/home.css' | relative_url }}">
+  </head>
+  <body>
+    <nav class="nav">
+      <a class="nav__name" href="{{ '/' | relative_url }}">{{ site.author.name }}</a>
+      <div class="nav__links">
+        <a href="#research">Research</a>
+        <a href="#experience">Experience</a>
+        <a href="#education">Education</a>
+        <a href="#skills">Skills</a>
+        <a href="{{ '/files/resume.pdf' | relative_url }}">CV</a>
+      </div>
+    </nav>
+
+    <main class="container">
+      {{ content }}
+    </main>
+
+    <footer class="container">
+      <div class="footer">
+        <span>&copy; {{ site.time | date: "%Y" }} {{ site.author.name }}</span>
+        <span>Updated {{ site.time | date: "%b %Y" }}</span>
+      </div>
+    </footer>
+
+    <script>
+      document.querySelectorAll('a[href]').forEach(function (a) {
+        var external = a.protocol.indexOf('http') === 0 && a.hostname !== location.hostname;
+        if (external || a.pathname.endsWith('.pdf')) {
+          a.target = '_blank';
+          a.rel = 'noopener';
+        }
+      });
+    </script>
+  </body>
+</html>
