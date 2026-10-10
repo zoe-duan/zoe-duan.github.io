@@ -30,7 +30,7 @@ redirect_from:
       <a href="{{ '/files/resume.pdf' | relative_url }}">{% include icon.html name="file" %}CV</a>
     </div>
   </div>
-  <img class="hero__photo" src="{{ '/images/profile-portrait.jpg' | relative_url }}" alt="Portrait of {{ site.author.name }}" width="640" height="800">
+  <img class="hero__photo" src="{{ '/images/profile-portrait.jpg' | relative_url }}?v={{ site.time | date: '%s' }}" alt="Portrait of {{ site.author.name }}" width="640" height="800">
 </header>
 
 <section class="section" id="research">
