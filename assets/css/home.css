@@ -17,8 +17,8 @@
   --line: #ececec;
   --underline: #cfcfcf;
   --hover: #f6f6f6;
-  --accent: #800000;
-  --accent-soft: #f8eeee;
+  --accent: #2f5aa8;
+  --accent-soft: #eef3fb;
   --thumb-bg: #ffffff;
   --font: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
   --mono: ui-monospace, "SF Mono", SFMono-Regular, Menlo, Consolas, monospace;
@@ -33,8 +33,8 @@
     --line: #1f1f1f;
     --underline: #444444;
     --hover: #161616;
-    --accent: #e3a3a3;
-    --accent-soft: #2a1515;
+    --accent: #8db0ec;
+    --accent-soft: #131c2b;
     --thumb-bg: #f5f5f5;
   }
 }
@@ -339,10 +339,16 @@ p {
 
 .interests li {
   padding: 2px 10px;
+  border: 1px solid var(--line);
   border-radius: 999px;
+  color: var(--muted);
+  transition: border-color 0.15s ease, background-color 0.15s ease, color 0.15s ease;
+}
+
+.interests li:hover {
+  border-color: var(--accent);
   background: var(--accent-soft);
   color: var(--accent);
-  font-weight: 500;
 }
 
 /* Featured research projects */
@@ -370,6 +376,11 @@ p {
   line-height: 1.45;
   letter-spacing: -0.005em;
   text-wrap: balance;
+  transition: color 0.15s ease;
+}
+
+.project:hover .project__title {
+  color: var(--accent);
 }
 
 .project__date {
@@ -391,12 +402,18 @@ p {
 
 .pill {
   padding: 0 8px;
-  border: 1px solid color-mix(in srgb, var(--accent) 30%, transparent);
+  border: 1px solid var(--line);
   border-radius: 999px;
-  background: var(--accent-soft);
   font-size: 12px;
   font-weight: 500;
   line-height: 20px;
+  color: var(--muted);
+  transition: border-color 0.15s ease, background-color 0.15s ease, color 0.15s ease;
+}
+
+.project:hover .pill {
+  border-color: color-mix(in srgb, var(--accent) 35%, transparent);
+  background: var(--accent-soft);
   color: var(--accent);
 }
 
@@ -421,7 +438,12 @@ p {
 .tags li::before {
   content: "#";
   margin-right: 2px;
-  color: color-mix(in srgb, var(--accent) 55%, var(--bg));
+  color: var(--underline);
+  transition: color 0.15s ease;
+}
+
+.project:hover .tags li::before {
+  color: var(--accent);
 }
 
 .subhead {
